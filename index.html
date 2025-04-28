@@ -3,284 +3,810 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joewina Restaurant</title>
+    <title>Jowina Restaurant - Fine Dining Experience</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/script.js" defer></script>
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <h1>Joewina</h1>
-            <p class="tagline">Fine Dining Experience</p>
-        </div>
-        <nav>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Jowina Restaurant</h1>
+                <span class="tagline">Fine Dining Experience</span>
+            </div>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About Us</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn-primary" id="reservation-btn">Reserve a Table</a></li>
+                <li><a href="#" class="btn-secondary" id="order-btn">Order Online</a></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <main>
-        <!-- Home Section -->
-        <section id="home" class="section active">
-            <div class="hero">
-                <div class="hero-content">
-                    <h2>Welcome to Joewina</h2>
-                    <p>Experience exceptional cuisine in an elegant atmosphere</p>
-                    <a href="#menu" class="btn">View Our Menu</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Culinary Excellence</h1>
+                <p>Experience the authentic taste of fine dining at Jowin Restaurant</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn-primary">View Menu</a>
+                    <a href="#reservation" class="btn-secondary">Make Reservation</a>
                 </div>
             </div>
-            <div class="features">
-                <div class="feature">
-                    <div class="icon">🍽️</div>
-                    <h3>Fine Dining</h3>
-                    <p>Enjoy our chef's special creations in an elegant setting</p>
-                </div>
-                <div class="feature">
-                    <div class="icon">🥂</div>
-                    <h3>Special Events</h3>
-                    <p>Perfect venue for celebrations and business meetings</p>
-                </div>
-                <div class="feature">
-                    <div class="icon">🌿</div>
-                    <h3>Fresh Ingredients</h3>
-                    <p>We use only the freshest local and seasonal ingredients</p>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Menu Section -->
-        <section id="menu" class="section">
-            <h2 class="section-title">Our Menu</h2>
-            <div class="menu-categories">
-                <button class="menu-category active" data-category="appetizers">Appetizers</button>
-                <button class="menu-category" data-category="main-courses">Main Courses</button>
-                <button class="menu-category" data-category="desserts">Desserts</button>
-                <button class="menu-category" data-category="drinks">Drinks</button>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <span class="divider"></span>
             </div>
-            <div class="menu-items">
-                <!-- Appetizers -->
-                <div class="menu-category-items active" id="appetizers">
-                    <div class="menu-item">
-                        <div class="menu-item-info">
-                            <h3>Bruschetta</h3>
-                            <p>Toasted bread topped with tomatoes, fresh basil, garlic, and olive oil</p>
-                        </div>
-                        <div class="menu-item-price">$8.99</div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-info">
-                            <h3>Calamari</h3>
-                            <p>Crispy fried calamari served with lemon aioli</p>
-                        </div>
-                        <div class="menu-item-price">$12.99</div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-info">
-                            <h3>Shrimp Cocktail</h3>
-                            <p>Chilled jumbo shrimp with cocktail sauce</p>
-                        </div>
-                        <div class="menu-item-price">$14.99</div>
-                    </div>
-                </div>
-                
-                <!-- Main Courses -->
-                <div class="menu-category-items" id="main-courses">
-                    <div class="menu-item">
-                        <div class="menu-item-info">
-                            <h3>Filet Mignon</h3>
-                            <p>8oz tenderloin steak served with garlic mashed potatoes and seasonal vegetables</p>
-                        </div>
-                        <div class="menu-item-price">$34.99</div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-info">
-                            <h3>Grilled Salmon</h3>
-                            <p>Atlantic salmon with lemon butter sauce, wild rice, and asparagus</p>
-                        </div>
-                        <div class="menu-item-price">$28.99</div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-info">
-                            <h3>Mushroom Risotto</h3>
-                            <p>Creamy arborio rice with wild mushrooms, parmesan cheese, and truffle oil</p>
-                        </div>
-                        <div class="menu-item-price">$22.99</div>
-                    </div>
-                </div>
-                
-                <!-- Desserts -->
-                <div class="menu-category-items" id="desserts">
-                    <div class="menu-item">
-                        <div class="menu-item-info">
-                            <h3>Tiramisu</h3>
-                            <p>Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream</p>
-                        </div>
-                        <div class="menu-item-price">$9.99</div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-info">
-                            <h3>Chocolate Lava Cake</h3>
-                            <p>Warm chocolate cake with a molten center, served with vanilla ice cream</p>
-                        </div>
-                        <div class="menu-item-price">$10.99</div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-info">
-                            <h3>Crème Brûlée</h3>
-                            <p>Rich vanilla custard with a caramelized sugar top</p>
-                        </div>
-                        <div class="menu-item-price">$8.99</div>
-                    </div>
-                </div>
-                
-                <!-- Drinks -->
-                <div class="menu-category-items" id="drinks">
-                    <div class="menu-item">
-                        <div class="menu-item-info">
-                            <h3>House Red Wine</h3>
-                            <p>Glass of our selected house red wine</p>
-                        </div>
-                        <div class="menu-item-price">$7.99</div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-info">
-                            <h3>Craft Cocktails</h3>
-                            <p>Ask your server about our seasonal craft cocktails</p>
-                        </div>
-                        <div class="menu-item-price">$12.99</div>
-                    </div>
-                    <div class="menu-item">
-                        <div class="menu-item-info">
-                            <h3>Italian Coffee</h3>
-                            <p>Espresso with a shot of amaretto and topped with whipped cream</p>
-                        </div>
-                        <div class="menu-item-price">$6.99</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section">
-            <h2 class="section-title">About Us</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <div class="placeholder-image"></div>
+                    <img src="/api/placeholder/450/400" alt="Jowin Restaurant Interior">
                 </div>
                 <div class="about-text">
-                    <h3>Our Story</h3>
-                    <p>Joewina Restaurant was founded in 2010 by Chef Joseph Wina, with a vision to create an unforgettable dining experience that combines culinary excellence with warm hospitality.</p>
-                    <p>Over the years, we've established ourselves as one of the premier dining destinations in the area, known for our innovative menu that blends traditional recipes with modern techniques.</p>
-                    <h3>Our Philosophy</h3>
-                    <p>At Joewina, we believe that great food starts with great ingredients. We source locally whenever possible and build relationships with farmers and suppliers who share our commitment to quality and sustainability.</p>
-                    <p>Every dish that leaves our kitchen is prepared with care and attention to detail, ensuring that your dining experience is nothing short of exceptional.</p>
+                    <h3>Welcome to Jowin Restaurant</h3>
+                    <p>Founded in 2010, Jowin Restaurant has been serving exceptional cuisine that combines traditional flavors with modern culinary techniques. Our mission is to create an unforgettable dining experience through outstanding food, impeccable service, and a warm atmosphere.</p>
+                    <p>Chef Michael Johnson and his team take pride in sourcing the finest local ingredients to create dishes that delight all the senses. From farm to table, every ingredient is selected with care to ensure freshness and quality.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-utensils"></i>
+                            <h4>Fine Dining</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Fresh Ingredients</h4>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-wine-glass-alt"></i>
+                            <h4>Premium Drinks</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="chef-section">
-                <h3>Meet Our Chef</h3>
-                <div class="chef-profile">
-                    <div class="chef-image">
-                        <div class="placeholder-image"></div>
-                    </div>
-                    <div class="chef-bio">
-                        <h4>Chef Joseph Wina</h4>
-                        <p>With over 20 years of experience in some of the world's finest restaurants, Chef Joseph brings passion and creativity to every dish. His culinary journey has taken him across Europe and Asia, influences you'll find throughout our menu.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2 class="section-title">Contact Us</h2>
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <span class="divider"></span>
+            </div>
+            <div class="menu-filter">
+                <div class="search-container">
+                    <input type="text" id="menu-search" placeholder="Search our menu...">
+                    <button id="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="filter-options">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="starters">Starters</button>
+                    <button class="filter-btn" data-filter="mains">Main Course</button>
+                    <button class="filter-btn" data-filter="desserts">Desserts</button>
+                    <button class="filter-btn" data-filter="drinks">Drinks</button>
+                </div>
+                <div class="dietary-filters">
+                    <label><input type="checkbox" data-dietary="vegetarian"> Vegetarian</label>
+                    <label><input type="checkbox" data-dietary="vegan"> Vegan</label>
+                    <label><input type="checkbox" data-dietary="gluten-free"> Gluten Free</label>
+                </div>
+                <div class="price-filter">
+                    <label>Price Range: $<span id="price-value">50</span></label>
+                    <input type="range" min="10" max="100" value="50" id="price-range">
+                </div>
+            </div>
+
+            <div class="menu-items">
+                <!-- Menu items will be populated via JavaScript -->
+            </div>
+
+            <div class="menu-pagination">
+                <button id="prev-page" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                <span id="page-info">Page 1 of 3</span>
+                <button id="next-page">Next <i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Gallery</h2>
+                <span class="divider"></span>
+            </div>
+            <div class="gallery-filter">
+                <button class="gallery-btn active" data-filter="all">All</button>
+                <button class="gallery-btn" data-filter="restaurant">Restaurant</button>
+                <button class="gallery-btn" data-filter="food">Food</button>
+                <button class="gallery-btn" data-filter="events">Events</button>
+            </div>
+            <div class="gallery-container">
+                <!-- Gallery images will be populated via JavaScript -->
+            </div>
+            <div class="modal" id="gallery-modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modal-img">
+                <div class="modal-caption"></div>
+                <button class="modal-nav prev-img"><i class="fas fa-chevron-left"></i></button>
+                <button class="modal-nav next-img"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest News & Recipes</h2>
+                <span class="divider"></span>
+            </div>
+            <div class="blog-container">
+                <!-- Blog posts will be populated via JavaScript -->
+            </div>
+            <button class="btn-primary" id="load-more-posts">Load More Posts</button>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customer Reviews</h2>
+                <span class="divider"></span>
+            </div>
+            <div class="reviews-summary">
+                <div class="rating-box">
+                    <span class="average-rating">4.8</span>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="review-count">Based on 243 reviews</span>
+                </div>
+                <div class="rating-bars">
+                    <div class="rating-bar">
+                        <span>5 <i class="fas fa-star"></i></span>
+                        <div class="bar"><div class="fill" style="width: 75%"></div></div>
+                        <span>182</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>4 <i class="fas fa-star"></i></span>
+                        <div class="bar"><div class="fill" style="width: 15%"></div></div>
+                        <span>37</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>3 <i class="fas fa-star"></i></span>
+                        <div class="bar"><div class="fill" style="width: 7%"></div></div>
+                        <span>17</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>2 <i class="fas fa-star"></i></span>
+                        <div class="bar"><div class="fill" style="width: 2%"></div></div>
+                        <span>5</span>
+                    </div>
+                    <div class="rating-bar">
+                        <span>1 <i class="fas fa-star"></i></span>
+                        <div class="bar"><div class="fill" style="width: 1%"></div></div>
+                        <span>2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reviews-slider">
+                <!-- Reviews will be populated via JavaScript -->
+            </div>
+            <div class="review-form-container">
+                <h3>Leave Your Review</h3>
+                <form id="review-form">
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Rating</label>
+                        <div class="rating-select">
+                            <i class="far fa-star" data-rating="1"></i>
+                            <i class="far fa-star" data-rating="2"></i>
+                            <i class="far fa-star" data-rating="3"></i>
+                            <i class="far fa-star" data-rating="4"></i>
+                            <i class="far fa-star" data-rating="5"></i>
+                        </div>
+                        <input type="hidden" name="rating" id="rating-value" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Review</label>
+                        <textarea name="review" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Review</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Make a Reservation</h2>
+                <span class="divider"></span>
+            </div>
+            <div class="reservation-content">
+                <div class="reservation-form">
+                    <form id="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="tel" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Number of Guests</label>
+                                <select name="guests" required>
+                                    <option value="">Select</option>
+                                    <option value="1">1 Person</option>
+                                    <option value="2">2 People</option>
+                                    <option value="3">3 People</option>
+                                    <option value="4">4 People</option>
+                                    <option value="5">5 People</option>
+                                    <option value="6">6 People</option>
+                                    <option value="large">7+ People</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Date</label>
+                                <input type="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Time</label>
+                                <select name="time" required>
+                                    <option value="">Select</option>
+                                    <option value="11:30">11:30 AM</option>
+                                    <option value="12:00">12:00 PM</option>
+                                    <option value="12:30">12:30 PM</option>
+                                    <option value="13:00">1:00 PM</option>
+                                    <option value="13:30">1:30 PM</option>
+                                    <option value="18:00">6:00 PM</option>
+                                    <option value="18:30">6:30 PM</option>
+                                    <option value="19:00">7:00 PM</option>
+                                    <option value="19:30">7:30 PM</option>
+                                    <option value="20:00">8:00 PM</option>
+                                    <option value="20:30">8:30 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Special Requests</label>
+                            <textarea name="requests" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Book Now</button>
+                    </form>
+                </div>
+                <div class="reservation-info">
+                    <h3>Reservation Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Friday: 11:30 AM - 10:00 PM</p>
+                            <p>Saturday - Sunday: 11:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>reservations@jowinrestaurant.com</p>
+                        </div>
+                    </div>
+                    <div class="info-note">
+                        <p>Please note that reservations are held for 15 minutes past the reservation time. For parties of 7 or more, please call us directly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Ordering Section -->
+    <section id="order" class="order">
+        <div class="container">
+            <div class="section-header">
+                <h2>Order Online</h2>
+                <span class="divider"></span>
+            </div>
+            <div class="order-options">
+                <div class="order-option">
+                    <h3>Delivery</h3>
+                    <p>Enjoy our delicious meals in the comfort of your home</p>
+                    <i class="fas fa-motorcycle"></i>
+                    <p class="detail">Delivery within 5 miles radius</p>
+                    <a href="#" class="btn-primary" id="delivery-btn">Order Delivery</a>
+                </div>
+                <div class="order-option">
+                    <h3>Pickup</h3>
+                    <p>Order ahead and pick up at your convenience</p>
+                    <i class="fas fa-shopping-bag"></i>
+                    <p class="detail">Ready within 20-30 minutes</p>
+                    <a href="#" class="btn-secondary" id="pickup-btn">Order Pickup</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <span class="divider"></span>
+            </div>
             <div class="contact-container">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Hours</h3>
-                        <p>Monday - Thursday: 5pm - 10pm</p>
-                        <p>Friday - Saturday: 5pm - 11pm</p>
-                        <p>Sunday: 4pm - 9pm</p>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Gourmet Avenue, Culinary District</p>
+                            <p>Foodville, FD 98765</p>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <h3>Location</h3>
-                        <p>123 Gourmet Avenue</p>
-                        <p>Culinary District</p>
-                        <p>Foodie City, FC 12345</p>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>Main: (555) 123-4567</p>
+                            <p>Reservations: (555) 123-4568</p>
+                        </div>
                     </div>
-                    <div class="contact-item">
-                        <h3>Reservations</h3>
-                        <p>Phone: (+234) 70311-61373</p>
-                        <p>Email: joewina@gmail.com</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>info@jowinrestaurant.com</p>
+                            <p>reservations@jowinrestaurant.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Monday - Friday: 11:30 AM - 10:00 PM</p>
+                            <p>Saturday - Sunday: 11:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-yelp"></i></a>
                     </div>
                 </div>
-                <div class="contact-form-container">
-                    <h3>Send Us a Message</h3>
-                    <form id="contact-form" class="contact-form">
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contact-form">
                         <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <label>Name</label>
+                            <input type="text" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <label>Email</label>
+                            <input type="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone</label>
-                            <input type="tel" id="phone" name="phone">
+                            <label>Subject</label>
+                            <input type="text" name="subject" required>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label>Message</label>
+                            <textarea name="message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn">Send Message</button>
+                        <button type="submit" class="btn-primary">Send Message</button>
                     </form>
-                    <div id="form-message" class="form-message"></div>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <h2>Joewina</h2>
-                <p>Fine Dining Experience</p>
-            </div>
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <h3>Connect With Us</h3>
-                <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                </div>
+            <div class="map-container">
+                <h3>Find Us</h3>
+                <div id="map"></div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Joewina Restaurant. All rights reserved.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Jowin</h2>
+                    <p>Fine Dining Experience</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#reservation">Reservations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Subscribe to our Newsletter</h3>
+                    <p>Get the latest updates on special events and promotions</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jowina Restaurant. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
         </div>
     </footer>
-    <div id="back-to-top" class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
+
+    <!-- Modal popups -->
+    <div class="modal-overlay" id="modal-overlay"></div>
+    
+    <!-- Reservation Confirmation Modal -->
+    <div class="modal" id="reservation-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Reservation Confirmation</h2>
+            <div id="reservation-details"></div>
+            <p>Thank you for your reservation! A confirmation has been sent to your email.</p>
+            <button class="btn-primary">Close</button>
+        </div>
     </div>
+    
+    <!-- Order Modal -->
+    <div class="modal" id="order-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Online Ordering</h2>
+            <div class="tab-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="delivery-tab">Delivery</button>
+                    <button class="tab-btn" data-tab="pickup-tab">Pickup</button>
+                </div>
+                <div class="tab-content active" id="delivery-tab">
+                    <form id="delivery-form">
+                        <div class="form-group">
+                            <label>Delivery Address</label>
+                            <input type="text" name="address" placeholder="Street Address" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="city" placeholder="City" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="zipcode" placeholder="Zip Code" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Contact Information</label>
+                            <input type="text" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="order-items-container">
+                            <h3>Your Order</h3>
+                            <div class="order-items" id="delivery-order-items">
+                                <!-- Order items will be populated here -->
+                                <p class="empty-cart">Your cart is empty. Add items from our menu.</p>
+                            </div>
+                            <div class="order-summary">
+                                <div class="summary-item">
+                                    <span>Subtotal</span>
+                                    <span>$0.00</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Delivery Fee</span>
+                                    <span>$3.99</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Tax</span>
+                                    <span>$0.00</span>
+                                </div>
+                                <div class="summary-item total">
+                                    <span>Total</span>
+                                    <span>$3.99</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Payment Method</label>
+                            <div class="payment-options">
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="credit" checked>
+                                    <span>Credit Card</span>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="paypal">
+                                    <span>PayPal</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="credit-card-form">
+                            <div class="form-group">
+                                <input type="text" name="card-number" placeholder="Card Number" maxlength="16">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" name="card-expiry" placeholder="MM/YY" maxlength="5">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="card-cvc" placeholder="CVC" maxlength="3">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Place Delivery Order</button>
+                    </form>
+                </div>
+                <div class="tab-content" id="pickup-tab">
+                    <form id="pickup-form">
+                        <div class="form-group">
+                            <label>Contact Information</label>
+                            <input type="text" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Phone Number" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Pickup Time</label>
+                            <select name="pickup-time" required>
+                                <option value="">Select Time</option>
+                                <option value="asap">As soon as possible (20-30 min)</option>
+                                <option value="30min">In 30 minutes</option>
+                                <option value="1hour">In 1 hour</option>
+                                <option value="2hour">In 2 hours</option>
+                            </select>
+                        </div>
+                        <div class="order-items-container">
+                            <h3>Your Order</h3>
+                            <div class="order-items" id="pickup-order-items">
+                                <!-- Order items will be populated here -->
+                                <p class="empty-cart">Your cart is empty. Add items from our menu.</p>
+                            </div>
+                            <div class="order-summary">
+                                <div class="summary-item">
+                                    <span>Subtotal</span>
+                                    <span>$0.00</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span>Tax</span>
+                                    <span>$0.00</span>
+                                </div>
+                                <div class="summary-item total">
+                                    <span>Total</span>
+                                    <span>$0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Payment Method</label>
+                            <div class="payment-options">
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="credit" checked>
+                                    <span>Credit Card</span>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="paypal">
+                                    <span>PayPal</span>
+                                </label>
+                                <label class="payment-option">
+                                    <input type="radio" name="payment" value="cash">
+                                    <span>Pay at Pickup</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div id="pickup-credit-card-form">
+                            <div class="form-group">
+                                <input type="text" name="card-number" placeholder="Card Number" maxlength="16">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <input type="text" name="card-expiry" placeholder="MM/YY" maxlength="5">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="card-cvc" placeholder="CVC" maxlength="3">
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Place Pickup Order</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Order Confirmation Modal -->
+    <div class="modal" id="order-confirmation-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="confirmation-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Order Confirmed!</h2>
+            <p>Your order has been successfully placed.</p>
+            <div id="order-details"></div>
+            <div class="order-info">
+                <div class="order-info-item">
+                    <i class="fas fa-receipt"></i>
+                    <span>Order #: <strong id="order-number">JW-12345</strong></span>
+                </div>
+                <div class="order-info-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Estimated Time: <strong id="order-time">30 minutes</strong></span>
+                </div>
+            </div>
+            <p>A confirmation has been sent to your email with order details.</p>
+            <button class="btn-primary">Close</button>
+        </div>
+    </div>
+
+    <!-- Item Details Modal -->
+    <div class="modal" id="item-modal">
+        <div class="modal-content item-modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="item-details">
+                <div class="item-image">
+                    <img src="" alt="Menu Item" id="modal-item-image">
+                </div>
+                <div class="item-info">
+                    <h2 id="modal-item-name"></h2>
+                    <div class="item-tags" id="modal-item-tags"></div>
+                    <p id="modal-item-description"></p>
+                    <div class="item-price" id="modal-item-price"></div>
+                    <div class="quantity-selector">
+                        <button class="quantity-btn" id="decrease-quantity">-</button>
+                        <input type="number" value="1" min="1" id="item-quantity">
+                        <button class="quantity-btn" id="increase-quantity">+</button>
+                    </div>
+                    <div class="item-options">
+                        <h3>Options</h3>
+                        <div id="item-options-list">
+                            <!-- Options will be populated via JavaScript -->
+                        </div>
+                    </div>
+                    <div class="item-special-requests">
+                        <h3>Special Requests</h3>
+                        <textarea id="item-special" placeholder="Any special instructions?"></textarea>
+                    </div>
+                    <button class="btn-primary add-to-cart-btn" id="add-to-cart">Add to Cart - <span id="total-item-price"></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Your Cart</h2>
+            <div class="cart-items" id="cart-items-list">
+                <!-- Cart items will be populated via JavaScript -->
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-summary">
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Tax</span>
+                    <span id="cart-tax">$0.00</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+            </div>
+            <div class="cart-buttons">
+                <button class="btn-secondary" id="continue-shopping">Continue Shopping</button>
+                <button class="btn-primary" id="proceed-to-checkout">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Newsletter Signup Modal -->
+    <div class="modal" id="newsletter-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="newsletter-modal-content">
+                <h2>Join Our Mailing List</h2>
+                <p>Subscribe to get exclusive offers, event invitations, and updates from Jowina Restaurant.</p>
+                <form id="newsletter-modal-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="newsletter-consent">
+                        <label for="newsletter-consent">I agree to receive marketing emails from Jowina Restaurant</label>
+                    </div>
+                    <button type="submit" class="btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to top button -->
+    <a href="#home" class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Cart Float Button -->
+    <div class="cart-float" id="cart-float">
+        <span class="cart-count">0</span>
+        <i class="fas fa-shopping-cart"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Google Maps API -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
 </body>
 </html>
